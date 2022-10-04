@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* IMPOSTAZIONI GENERALI */
+body{
+    background-image: url("assets/img/sfondo.png");
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    line-height: 1.5em;
+}
+h1{
+    font-size: 32px;
+    font-weight: 500;
+}
+h2{
+    font-size: 24px;
+}
+p{
+    font-size: 16px;
+    margin-top: 10px;
+}
+/* HEADER */
+header{
+    text-align: center;
+    padding: 20px;
+    background-color: #1e81b0;
+}
+nav{
+    margin-top: 20px;
+}
+#menu li{
+    list-style: none;   
+}
+#menu a{
+    text-decoration: none;
+    color: white;
+}
+#menu li:before{
+    content: "\21d2";
+    color: white;
+}
+#menu li:after{
+    content: "\21d0";
+    color:white;
+}
+#menu{
+    margin-left: 0;
+}
+/* MAIN */
+h1, h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/* ELEMENTI NEL MAIN - ARTICLE */
+#greyText{
+    color: #8fa2a2;
+}
+ul, ol{
+    margin-left: 20px;
+    margin-top: 20px;  
+}
+li{
+    margin-left: 20px;
+}
+a{
+    color: #1e81b0;
+}
+code{
+    background-color:#8fa2a2;
+    border-radius: 5px;
+}
+strong{
+    color: violet;
+}
+/* TABELLE */
+table{
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+caption{
+    font-weight: bold;
+}
+td{
+    padding:20px
+}
+tr:nth-child(evenly) td{
+    background-color: #8fa2a2;
+}
+th{
+    background-color: #1f4d7e;
+    color: white;
+    padding: 20px;
+    border-right: 1px solid white;
+}
+iframe{
+    border-radius: 5px;
+}
+/* FORM */
+#newsletter{
+    height: 200px;
+    background-color: #8fa2a2;
+    padding: 20px;
+    margin-top: 20px;
+}
+#newsletter h2, newsletter p{
+    text-align: center;
+}
+#newsletter fieldset{
+    margin-top: 20px;
+}
+input{
+    border: none;
+    border-bottom: 1px dotted grey;
+    height: 30px;
+}
+button{
+    background-color: #1f4d7e;
+    color: white;
+    height: 30px;
+}
+/* ELEMENTI NELL' ASIDE */
+aside{
+    padding: 20px;
+    text-align: center;
+}
+aside h2{
+    text-align: center;
+    margin: 20px;
+}
+aside div{
+    background-color: #8fa2a2;
+    padding: 20px;
+    margin-top: 20px;
+}
+.correlati a, .correlati p{
+    text-align: left;
+}
+.data{
+    text-align: end;
+}
+/* FOOTER */
+footer{
+    padding: 20px;
+    background-color: #51749b;
+}
+footer p, footer address{
+    text-align: center;
+}
+footer a{
+    color:red;
+}
