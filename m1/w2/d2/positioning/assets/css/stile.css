@@ -24,6 +24,7 @@ header {
     padding: 2em 1.5em;
     position: sticky;
     top: 0;
+    position: -webkit-sticky;
     z-index: 1;
 }
 header div img {
@@ -34,8 +35,8 @@ header nav ul {
 }
 header nav li {
     list-style: none;
-    display: inline-block;
-    margin-right: 10px;
+    display: inline;
+    padding-right: 20px;
 }
 header nav li a {
     color: white;
@@ -52,21 +53,40 @@ header nav li a::before {
 main {
     background-color: #fff;
     box-shadow: 0 3px 3px #444;
-    padding: 2em 1em;
+    padding: 2em 3em;
     margin-bottom:1.5em ;
 }
 section { 
     background-color: #e3e3e3;
-    padding: 1em;
+    padding: 2.5em 0.8em;
     margin-bottom: 2em;
+    position: relative;
 }
 section h2 {
     text-align: center;
     color: #333;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 1em;
+    position: absolute;
+    top: -13px;
+    left: 12px;
+    padding: 0px 1em;
+    background-color: #a0a0a0;
+    box-shadow: rgba(0, 0, 0, 0.5) 1.95px 1.95px 2.6px;
+}
+
+main article img{
+    float: left;
+    margin-right: 20px;
+    border-width: 4px;
+    border-style: solid;
+    border-color: rgb(0, 160, 198);
+    border-image: initial;
+    outline: rgb(160, 37, 113) solid 4px;
+    padding: 3px;
+    width: 50px;
 }
 
 /* ELEMENTI NEL MAIN - ARTICLE */
@@ -78,10 +98,6 @@ h1 {
 }
 p, address, ul, ol, dl, blockquote {
     margin-bottom: 1.2em;
-}
-#badge{
-    float: left;
-    margin-right: 20px;
 }
 h1 + p {
     color: #a0a0a0;
@@ -107,14 +123,6 @@ iframe {
     height: auto;
     margin-bottom: 2em;
     border-radius: 20px;
-}
-#novita{
-    background-color: #a3a4a3;
-    width: 30%;
-    position: relative;
-    top: -1.2em;
-    left: 0.5em;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 /* TABELLE */
@@ -146,6 +154,8 @@ tbody tr:last-of-type {
     border-bottom: 2px solid #3f6bca;
 }
 
+
+
 /* FORM */
 input {
     padding: 5px;
@@ -154,7 +164,7 @@ input {
 }
 button {
     padding: 4px 7px;
-    background-color: #3f6cab;
+    background-color: #3f6bca;
     border: 0;
     color: white;
     font-weight: bold;
@@ -195,19 +205,29 @@ footer {
 footer a {
     color: fuchsia;
 }
-.button a, .top a{
-    font-size: 3rem;
-    background-color: white;
-    color: #3f6cab;
-}
-#buttonContainer{
+
+/* SOCIAL */
+.social{
     position: fixed;
-    top: 50vh;
-    right: -0.5em;
+    top: 30%;
+    right: 0;
+    background-color: white;
 }
-.top a{
-    color: fuchsia;
-}
-.button{
+
+.social a{
+    display: block;
+    color: #3f6bca;
     margin-bottom: 20px;
 }
+
+.top{
+    position: fixed;
+    top: 45%;
+    right: 0;
+    background-color: white;
+}
+
+.top a{
+    color: #a02571;
+}
+
