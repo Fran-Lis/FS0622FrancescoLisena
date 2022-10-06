@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #666666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "indie flower";
+}
+#container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.postit{
+    width:300px;
+    height:238px;
+    border: 1px solid black;
+    margin: 25px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    padding: 4rem;
+    transition: 1s ease;
+}
+
+.yellow{
+    background: linear-gradient(#fafbc9 80%, #c1c3879c);
+    rotate: -5deg;
+}
+
+.green{
+    background: linear-gradient(#C1ECC3 80%, #799c7ba9);
+    rotate: 7deg; 
+}
+
+.purple{
+    background: linear-gradient(#C5C5F0 80%, #7d7da7a8);
+    rotate: -8deg;
+}
+
+.postit:last-child{
+    rotate: 2deg;
+}
+
+.postit:nth-child(2){
+    rotate: 4deg
+}
+
+h2{
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 1.8;
+}
+p{
+    font-size:28px;
+}
+
+.postit:hover{
+    transform: scale(1.2, 1.2) rotate(0deg);
+    rotate: 0deg;
+    box-shadow: rgba(0, 0, 0, 0.6) 15px 15px 25px, rgba(0, 0, 0, 0.6) 10px 10px 10px;
+}
+
